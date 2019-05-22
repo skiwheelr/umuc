@@ -1,0 +1,4 @@
+username=wamp_user
+password=user4wamp
+host=localhost
+db=wamp

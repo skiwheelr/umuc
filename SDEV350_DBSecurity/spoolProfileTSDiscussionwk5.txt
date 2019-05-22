@@ -1,0 +1,67 @@
+
+Profile MYPROFILE4 created.
+
+
+TABLESPACE MYUMUCTABLESPACE4 created.
+
+
+User MYTESTUSER4 created.
+
+
+TABLESPACE MYUMUCTABLESPACE3 dropped.
+
+
+FILE_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             BLOCKS TABLESPACE_NAME               
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------- ------------------------------
+/rdsdbdata/db/SDEV350_A/datafile/o1_mf_system_f0svny79_.dbf                                                                                                                                                                                                                                                                                                                                                                                                                                                                            51200 SYSTEM                        
+/rdsdbdata/db/SDEV350_A/datafile/o1_mf_sysaux_f0svo48d_.dbf                                                                                                                                                                                                                                                                                                                                                                                                                                                                            53696 SYSAUX                        
+/rdsdbdata/db/SDEV350_A/datafile/o1_mf_undo_t1_f0svo8wm_.dbf                                                                                                                                                                                                                                                                                                                                                                                                                                                                           38400 UNDO_T1                       
+/rdsdbdata/db/SDEV350_A/datafile/o1_mf_users_f0svo9np_.dbf                                                                                                                                                                                                                                                                                                                                                                                                                                                                             12800 USERS                         
+/rdsdbdata/db/SDEV350_A/datafile/o1_mf_rdsadmin_f0swm5wr_.dbf                                                                                                                                                                                                                                                                                                                                                                                                                                                                            896 RDSADMIN                      
+/rdsdbdata/db/SDEV350_A/datafile/o1_mf_myumucta_gbb96v4z_.dbf                                                                                                                                                                                                                                                                                                                                                                                                                                                                          12800 MYUMUCTABLESPACE4             
+
+6 rows selected. 
+
+
+myumuctablespace4                 FILE_ID     PIECES    MAXIMUM    MINIMUM    AVERAGE      TOTAL
+------------------------------ ---------- ---------- ---------- ---------- ---------- ----------
+MYUMUCTABLESPACE4                       6          1      12024      12024      12024      12024
+UNDO_T1                                 3          6      35584         16       6196      37176
+RDSADMIN                                5          1         80         80         80         80
+SYSAUX                                  2         53       2600          8 57.0566038       3024
+USERS                                   4          1      12024      12024      12024      12024
+SYSTEM                                  1          2       2304         16       1160       2320
+
+6 rows selected. 
+
+
+USERNAME                                                                                                                         PROFILE                                                                                                                          ACCOUNT_STATUS                  
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- --------------------------------
+UMUCMARK                                                                                                                         DEFAULT                                                                                                                          OPEN                            
+AUDSYS                                                                                                                           DEFAULT                                                                                                                          EXPIRED & LOCKED                
+SYSBACKUP                                                                                                                        DEFAULT                                                                                                                          EXPIRED & LOCKED                
+SYSDG                                                                                                                            DEFAULT                                                                                                                          EXPIRED & LOCKED                
+SYSKM                                                                                                                            DEFAULT                                                                                                                          EXPIRED & LOCKED                
+OUTLN                                                                                                                            DEFAULT                                                                                                                          EXPIRED & LOCKED                
+XS$NULL                                                                                                                          DEFAULT                                                                                                                          EXPIRED & LOCKED                
+GSMADMIN_INTERNAL                                                                                                                DEFAULT                                                                                                                          EXPIRED & LOCKED                
+GSMUSER                                                                                                                          DEFAULT                                                                                                                          EXPIRED & LOCKED                
+DIP                                                                                                                              DEFAULT                                                                                                                          EXPIRED & LOCKED                
+APPQOSSYS                                                                                                                        DEFAULT                                                                                                                          EXPIRED & LOCKED                
+
+USERNAME                                                                                                                         PROFILE                                                                                                                          ACCOUNT_STATUS                  
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- --------------------------------
+XDB                                                                                                                              DEFAULT                                                                                                                          EXPIRED & LOCKED                
+ANONYMOUS                                                                                                                        DEFAULT                                                                                                                          EXPIRED & LOCKED                
+GSMCATUSER                                                                                                                       DEFAULT                                                                                                                          EXPIRED & LOCKED                
+CTXSYS                                                                                                                           DEFAULT                                                                                                                          EXPIRED & LOCKED                
+SYS                                                                                                                              RDSADMIN                                                                                                                         OPEN                            
+SYSTEM                                                                                                                           RDSADMIN                                                                                                                         OPEN                            
+RDSADMIN                                                                                                                         RDSADMIN                                                                                                                         OPEN                            
+DBSNMP                                                                                                                           RDSADMIN                                                                                                                         EXPIRED & LOCKED                
+MYTESTUSER2                                                                                                                      MYPROFILE2                                                                                                                       OPEN                            
+MYTESTUSER3                                                                                                                      MYPROFILE3                                                                                                                       OPEN                            
+MYTESTUSER4                                                                                                                      MYPROFILE4                                                                                                                       OPEN                            
+
+22 rows selected. 
+

@@ -1,0 +1,40 @@
+Q.1
+	Yes, table is in 1NF because all attributes are atomic and all rows are unique.
+Q.2
+	Primary Key: (GIRL, GAME)
+Q.3
+	Due to deletion there is a loss of data because if Jacqueline is deleted then GAME - “Visual Basic” and CATEGORY “Prog. Languages” would cease to exist.
+
+Q.4
+	GIRL -> GROUP
+	GIRL -> AGE
+	GIRL -> GAME
+	GAME -> CATEGORY
+	GAME -> PRICE
+
+Q.5
+	Based on the functional dependencies shown above database is in 1NF. Condition for database to be in 2NF is that there should not be any partial functional dependency that means a part of a key should not derive a non-prime attributes.
+Primary Key:  (GIRL, GAME)
+	GAME -> CATEGORY //fails for 2NF
+
+Q.6
+	Table1:
+		GIRL		GROUP			AGE			GAME
+		Charlotte	5 year olds		5			Mirror
+		Susan		6 year olds		6			Lipstick
+		Jane		5 year olds		5			Chess
+		Susan		6 year olds		6			Checkers
+		Susan		6 year olds		6			Mirror
+		Carrie		6 year olds		6			Lipstick Makeup
+		Jacqueline	5 year olds		5			Visual Basic
+
+	Table2:
+		GAME			CATEGORY
+		Mirror			Makeup
+		Lipstick 		Makeup
+		Chess			Games
+		Visual Basic	Prog. Languages
+
+	There are two 3NF relations after decomposition of original tables
+	
+	

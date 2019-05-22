@@ -1,0 +1,231 @@
+
+Table CUSTOMER created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Table PRODUCT created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Table ORDERR created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Table SHIPMENT created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Table ORDERPRODUCT created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+CUSTOMERID NAME                            BIRTHYEAR      PHONE    
+ZIPCODE    ORDERID  ORDEREDON      TYPEE SHIPPINGID CUSTOMERID
+---------- ------------------------------ ---------- ---------- 
+---------- ---------- ---------- ---------- ---------- ----------
+       201 Greg                                 1994   83927349      
+39484        301      30419     230904        401        201
+       206 Marvin                               2000  487932894      
+21783        306      21519     340043        406        206
+       208 Gavin                                1975  298493844      
+82938        308      12319     449080        408        208
+
+
+CUSTOMERID NAME                            BIRTHYEAR      PHONE    
+ZIPCODE
+---------- ------------------------------ ---------- ---------- 
+----------
+       205 David                                1995  348934829      
+26478
+       206 Marvin                               2000  487932894      
+21783
+       207 Clarke                               1998  374398478      
+47783
+       208 Gavin                                1975  298493844      
+82938
+       209 Griffin                              1964   74893248      
+28739
+       210 Desmond                              1987   84739498      
+22991
+
+6 rows selected. 
+
+
+SERIALNUMBER DESCRIPTION                                                                                                                                                                                                                                                          
+PRICE      STOCK
+------------ 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+---------- ----------
+      230904 A nice and proper drain unclogger                                                                                                                                                                                                                                       
+40         10
+      203940 A sophisticated towel rack for a modern home                                                                                                                                                                                                                            
+55        100
+      340043 A pet pillow for your dog or cat                                                                                                                                                                                                                                        
+95          2
+      449080 A very expensive laptop computer                                                                                                                                                                                                                                      
+1000          5
+
+
+CUSTOMERID NAME                            BIRTHYEAR      PHONE    
+ZIPCODE
+---------- ------------------------------ ---------- ---------- 
+----------
+       201 Greg                                 1994   83927349      
+39484
+       202 Steven                               1984   92384390      
+83849
+       204 Mike                                 1982  394804980      
+32839
+       205 David                                1995  348934829      
+26478
+       206 Marvin                               2000  487932894      
+21783
+       207 Clarke                               1998  374398478      
+47783
+       210 Desmond                              1987   84739498      
+22991
+
+7 rows selected. 
+
+
+   ORDERID SERIALNUMBER
+---------- ------------
+       308       449080
+
+
+SHIPMENTID SH COUNTRY                          CARRIER      QUANTITY
+---------- -- -------------------------------- ---------- ----------
+       401 NJ USA                              FedEx               3
+       406 TX USA                              UPS                 1
+       408 DE Europe                           DHL                 1
+
+
+CUSTOMERID NAME                            BIRTHYEAR      PHONE    
+ZIPCODE
+---------- ------------------------------ ---------- ---------- 
+----------
+       201 Greg                                 1994   83927349      
+39484
+
+
+SERIALNUMBER DESCRIPTION                                                                                                                                                                                                                                                          
+PRICE      STOCK
+------------ 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+---------- ----------
+      430434 A car wiper tool                                                                                                                                                                                                                                                        
+25         50
+
+Name       Null?    Type         
+---------- -------- ------------ 
+SHIPMENTID NOT NULL NUMBER(38)   
+SHIPSTATE           VARCHAR2(2)  
+COUNTRY             VARCHAR2(32) 
+CARRIER             VARCHAR2(10) 
+QUANTITY            NUMBER(38)   
+Name       Null?    Type       
+---------- -------- ---------- 
+ORDERID    NOT NULL NUMBER(38) 
+ORDEREDON           NUMBER(38) 
+TYPEE               NUMBER(38) 
+SHIPPINGID          NUMBER(38) 
+CUSTOMERID          NUMBER(38) 
+Name       Null?    Type         
+---------- -------- ------------ 
+CUSTOMERID NOT NULL NUMBER(38)   
+NAME                VARCHAR2(30) 
+BIRTHYEAR           NUMBER(38)   
+PHONE               NUMBER(38)   
+ZIPCODE             NUMBER(38)   
+Name         Null?    Type          
+------------ -------- ------------- 
+SERIALNUMBER NOT NULL NUMBER(38)    
+DESCRIPTION           VARCHAR2(255) 
+PRICE                 NUMBER(38)    
+STOCK                 NUMBER(38)    
+Name         Null? Type       
+------------ ----- ---------- 
+ORDERID            NUMBER(38) 
+SERIALNUMBER       NUMBER(38) 
+
+Table ORDERPRODUCT dropped.
+
+
+Table SHIPMENT dropped.
+
+
+Table ORDERR dropped.
+
+
+Table PRODUCT dropped.
+
+
+Table CUSTOMER dropped.
+

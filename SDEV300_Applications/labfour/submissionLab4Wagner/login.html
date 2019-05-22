@@ -1,0 +1,50 @@
+<html>
+<style>
+#base {
+   margin: 100%;
+   display: inline-block;
+   vertical-align: top;
+   display: inline-block;
+   vertical-align: top;
+   background-color: lightblue;
+   text-align: center;
+   width: 30%;  }
+table {
+    align: center;
+    width: 100%; }
+</style>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Form Login</title>
+</head>
+<body OnLoad="document.main.username.focus();">
+  <div id="base" name="base">
+<table text="center" >
+<tr>
+<td colspan="2">
+<h4>Enter your Username and Email Address to start a Session:</h4>
+</td>
+</tr>
+<!-- create the main form with an input text boxes -->
+<form name="main" method="post" action="projects.php">
+<tr>
+<td>USERNAME:</td>
+<td><input name="username" type="text" size="50"></td>
+</tr>
+<tr>
+<td>EMAIL ADDRESS:</td>
+<td><input name="emailadd" type="text" size="50"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input name="pwd" type="text" size="50"></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input name="btnsubmit" type="submit" value="SUBMIT"></td>
+</tr>
+</form>
+</table>
+</div>
+</body>
+</html>

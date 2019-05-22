@@ -1,0 +1,35 @@
+CREATE PROFILE myprofile4 LIMIT
+    FAILED_LOGIN_ATTEMPTS 5
+    PASSWORD_LOCK_TIME 1;
+    
+CREATE TABLESPACE myumuctablespace4;
+
+CREATE USER mytestuser4
+    IDENTIFIED BY pwd4user
+    DEFAULT TABLESPACE myumuctablespace4
+    PROFILE myprofile4;
+  
+  
+--DELETE PROFILE myprofile3;
+--DELETE TABLESPACE myumuctablespace3;
+--DELETE USER mytestuser3;
+--V$TABLESPACE;
+--DROP TABLESPACE myumuctablespace;
+--DROP TABLESPACE myumuctablespace2;
+DROP TABLESPACE myumuctablespace3;
+
+SELECT FILE_NAME, BLOCKS, TABLESPACE_NAME FROM DBA_DATA_FILES;
+
+SELECT TABLESPACE_NAME "myumuctablespace4", FILE_ID,
+   COUNT(*)    "PIECES",
+   MAX(blocks) "MAXIMUM",
+   MIN(blocks) "MINIMUM",
+   AVG(blocks) "AVERAGE",
+   SUM(blocks) "TOTAL"
+   FROM DBA_FREE_SPACE
+GROUP BY TABLESPACE_NAME, FILE_ID;
+
+SELECT USERNAME, PROFILE, ACCOUNT_STATUS FROM DBA_USERS; 
+
+
+
